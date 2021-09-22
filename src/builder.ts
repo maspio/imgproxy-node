@@ -1,4 +1,4 @@
-import urljoin from 'url-join';
+import { joinURL } from 'ufo';
 import { Gravity, WatermarkPosition } from '.';
 import {
   FocusPoint,
@@ -158,7 +158,7 @@ export class ImgproxyBuilder {
       : typeof config.insecure === 'string'
       ? config.insecure
       : 'insecure';
-    return urljoin(config.baseUrl, `${signature}${uri}`);
+    return joinURL(config.baseUrl, `${signature}${uri}`);
   }
 
   private serializeOptions() {

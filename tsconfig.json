@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "lib": ["esnext"],
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
-    "outDir": "dist",
-    "esModuleInterop": true
+    "outDir": "./build",
+    "strict": true,
+    "sourceMap": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "noImplicitAny": false
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
