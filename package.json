@@ -35,24 +35,25 @@
     "!**/*.map"
   ],
   "scripts": {
+    "analyze": "size-limit",
     "build": "siroc build",
     "lint": "tslint --project tsconfig.json src/**/*.ts",
     "prettier-check": "prettier -l 'src/**/*.ts' > /dev/null || echo 'Prettier violations found, please format code using Prettier'",
-    "test": "npm run prettier-check && npm run lint",
-    "analyze": "size-limit"
+    "prepublish": "npm run build",
+    "test": "npm run prettier-check && npm run lint"
   },
   "dependencies": {
     "ufo": "^0.7.9"
   },
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^5.0.4",
-    "@types/node": "^16.9.6",
-    "prettier": "^1.15.3",
-    "rimraf": "^2.6.2",
+    "@size-limit/preset-small-lib": "^5.0.5",
+    "@types/node": "^16.10.3",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
     "siroc": "^0.16.0",
-    "size-limit": "^5.0.4",
-    "tslint": "^5.17.0",
-    "tslint-config-prettier": "^1.17.0",
+    "size-limit": "^5.0.5",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.4.3"
   },
   "engines": {
