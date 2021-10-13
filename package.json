@@ -1,6 +1,6 @@
 {
   "name": "@picibird/imgproxy",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "NodeJS client library to generate imgproxy urls",
   "keywords": [
     "imgproxy",
@@ -22,7 +22,7 @@
     "Marcus Specht <me@masp.io> (https://picibird.com)"
   ],
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
